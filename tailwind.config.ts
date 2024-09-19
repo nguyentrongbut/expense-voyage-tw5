@@ -57,8 +57,8 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				primary: "var(--font-poppins)",
-				secondary: "var(--font-inter)"
+				primary: "var(--font-syne)",
+				secondary: "var(--font-manrope)"
 			}
 		}
 	},

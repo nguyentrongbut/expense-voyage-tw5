@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Inter, Poppins } from "next/font/google";
+import { Manrope, Syne } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
+const syne = Syne({
     subsets: ["latin"],
-    weight: ["400", "500", "700"],
-    variable: "--font-poppins",
+    variable: "--font-syne",
 });
 
-const inter = Inter({
+const manrope = Manrope({
     subsets: ["latin"],
-    variable: "--font-inter",
+    variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +24,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} ${poppins.variable}`}>{children}</body>
+            <body className={`${syne.variable} ${manrope.variable}`}>{children}</body>
         </html>
     );
 }
